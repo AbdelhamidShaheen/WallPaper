@@ -32,20 +32,23 @@ public class ImageShow extends AppCompatActivity {
         } catch (Exception e) {
             print(e.getMessage());
         }
-
+        imageButton = (ImageButton) findViewById(R.id.ShowButton);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                WallpaperManager manager = WallpaperManager.getInstance(getApplicationContext());
-                try {
-                    manager.setResource(image);
-                } catch (IOException e) {
-                    print(e.getMessage());
-                }finally {
-                    print("Image is loaded");
-                }
+                // WallpaperManager manager = WallpaperManager.getInstance(getApplicationContext());
+                //  try {
+                //       manager.setResource(image);
+                //  } catch (IOException e) {
+                //     print(e.getMessage());
+                //  }finally {
+                //  print("Image is loaded");
+                //  }
+                print(image + "");
             }
         });
+
+
     }
 
     private void print(String s) {
