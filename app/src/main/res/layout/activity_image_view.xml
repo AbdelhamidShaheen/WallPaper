@@ -19,6 +19,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
-        android:background="@drawable/ic_check_black_24dp" />
+        android:src="@drawable/ic_check_black_24dp"
+        android:background="@drawable/action_button_d"
+         />
 
 </RelativeLayout>

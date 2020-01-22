@@ -36,15 +36,15 @@ public class ImageShow extends AppCompatActivity {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // WallpaperManager manager = WallpaperManager.getInstance(getApplicationContext());
-                //  try {
-                //       manager.setResource(image);
-                //  } catch (IOException e) {
-                //     print(e.getMessage());
-                //  }finally {
-                //  print("Image is loaded");
-                //  }
-                print(image + "");
+                WallpaperManager manager = WallpaperManager.getInstance(getApplicationContext());
+                try {
+                    manager.setResource(image);
+                } catch (IOException e) {
+                    print(e.getMessage());
+                } finally {
+                    print("Image is loaded");
+                }
+
             }
         });
 
